@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "graph": "npx nx graph",
     "prereact-app": "yarn add @nx/react -D",
     "react-app": "npx nx g @nx/react:app admin",
-    "next-app": "npx nx g @nx/next:app admin"
+    "next-app": "npx nx g @nx/next:app admin",
+    "gen-lib": "nx g library libs/header"
   },
   "private": true,
   "dependencies": {
