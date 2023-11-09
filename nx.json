@@ -37,5 +37,22 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "MDYxMDlmODAtM2FiNC00ZjBkLWEzNDMtY2FkZTU3ZmRjZjdjfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MDYxMDlmODAtM2FiNC00ZjBkLWEzNDMtY2FkZTU3ZmRjZjdjfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "webpack",
+        "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  }
 }
