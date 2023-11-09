@@ -1,0 +1,8 @@
+=======Setup Process========
+
+- Create workspace with nx (Choose Node=>Nest JS app)
+- Run project using nx serve APP_NAME
+- Run DB Service using docker compose
+- Prisma => init and migrate
+- Create Prisma service for DB connection
+- Import Prisma service inside AppModule and ModuleServices
