@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@app-nx/libs/dfn": ["libs/dfn/src/index.ts"],
       "@app-nx/libs/header": ["libs/header/src/index.ts"],
       "@app-nx/libs/mylib": ["libs/mylib/src/index.ts"],
       "@app-nx/mylib": ["mylib/src/index.ts"]

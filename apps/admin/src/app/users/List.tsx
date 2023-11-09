@@ -5,11 +5,13 @@ const API_URL = 'http://localhost:3000/api';
 export default function List() {
   // const [users, setUsers] = useState([]);
   const [users, setUsers] = useState<any[]>([]);
+  const [currentDate, setCurrentDate] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(API_URL);
       const data = await res.json();
+      setCurrentDate(data.dt);
       if (data) setUsers(data.data);
     }
 
@@ -28,7 +30,7 @@ export default function List() {
                   {u.email} -{' '}
                   <b>
                     {' '}
-                    {u.firstName} {u.lastName}
+                    {u.firstName} {u.lastName} (Magical Date: {currentDate})
                   </b>
                 </li>
               );

@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { humanizeDate } from '@app-nx/libs/dfn';
 
 @Injectable()
 export class AppService {
@@ -7,6 +8,6 @@ export class AppService {
 
   async getData() {
     const user = await this.prisma.user.findMany({});
-    return { data: user };
+    return { data: user, dt: humanizeDate() };
   }
 }

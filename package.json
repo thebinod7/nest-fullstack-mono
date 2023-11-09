@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "affected": "npx nx graph --affected --base=master --head=HEAD --file=output.html",
     "graph": "npx nx graph",
     "prereact-app": "yarn add @nx/react -D",
     "react-app": "npx nx g @nx/react:app admin",
