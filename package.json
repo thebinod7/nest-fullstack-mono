@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "nx build api --configuration=production",
+    "start": "node dist/apps/api/main.js",
     "affected": "npx nx graph --affected --base=master --head=HEAD --file=output.html",
     "graph": "npx nx graph",
     "prereact-app": "yarn add @nx/react -D",
