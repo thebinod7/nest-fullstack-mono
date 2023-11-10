@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "test-api": "nx e2e api-e2e",
     "build": "nx build api --configuration=production",
     "start": "node dist/apps/api/main.js",
     "affected": "npx nx graph --affected --base=master --head=HEAD --file=output.html",

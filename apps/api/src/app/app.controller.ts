@@ -10,4 +10,14 @@ export class AppController {
   getData() {
     return this.appService.getData();
   }
+
+  @Get('message')
+  getMessage() {
+    return { message: 'Hello API' };
+  }
+
+  @Get('user')
+  getUser() {
+    return { message: 'Hello User' };
+  }
 }
